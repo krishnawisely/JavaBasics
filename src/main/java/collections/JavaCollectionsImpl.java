@@ -18,6 +18,7 @@ public class JavaCollectionsImpl implements JavaCollections {
 		List<String> list = new ArrayList<String>();
 		list.add("krishna");
 		list.add("ram");
+		list.add("ram");
 		return list;
 	}
 
@@ -42,6 +43,7 @@ public class JavaCollectionsImpl implements JavaCollections {
 	 */
 	public List<String> vector() {
 		List<String> cars = new Vector<String>();
+		cars.add("TATA");
 		cars.add("BMW");
 		cars.add("jaguar");
 		cars.add("TATA");
@@ -66,6 +68,7 @@ public class JavaCollectionsImpl implements JavaCollections {
 		}
 		System.out.println("Clear name list");
 		names.clear();// It removes all elements in the array
+		//Check wether names array is empty or not
 		if (names.isEmpty()) {
 			System.out.println("Name list is empty!");
 		}
@@ -77,12 +80,15 @@ public class JavaCollectionsImpl implements JavaCollections {
 		List<String> fruits = new LinkedList<String>();
 		fruits = obj.linkedList();
 		for (String fruit : fruits) {
-			System.out.println(fruit);
+			System.out.println("|" + fruit + "|");
 		}
 		// Vector
+		System.out.println("=========");
+		System.out.println("Cars List");
+		System.out.println("=========");
 		List<String> cars = obj.vector();
 		for (String car : cars) {
-			System.out.println(car);
+			System.out.println("|" + car + "|");
 		}
 	}
 }
